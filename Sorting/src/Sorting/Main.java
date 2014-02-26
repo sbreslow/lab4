@@ -1,4 +1,5 @@
 package Sorting;
+import InsertionSort;
 
 public class Main {
 
@@ -19,14 +20,11 @@ public class Main {
 				System.out.print(i + " ");
 		}
 		System.out.println();
-		int[] sorted = BubbleSort.bubbleSort(unsortedArray);
 		System.out.println("Sorted Array:");
-		for(int i: sorted){
-				System.out.println(i + "");
+		
+    unsortedArray = InsertionSort.insertionSort(unsortedArray); 
+		for (int i: unsortedArray) {
+				System.out.print(i + " ");
 		}
-		//TODO: sort the array and print out its contents
-		
-		
 	}
-
 }
